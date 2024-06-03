@@ -1,0 +1,390 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root{    
+    --bg:black;
+    --pallete1:rgba(221, 151, 20, 0.912);
+    --pallete2:white;
+}
+body{
+    background-color: var(--bg);
+}
+
+.navbar {
+    display: flex;
+    justify-content:flex-end;
+    /* padding: 20px; */
+    background-color: rgba(0, 0, 0, 0.44);
+    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height:4.8rem;
+}
+
+.navbar .navbar-judul{
+    font-size:2rem;
+    font-weight:bolder;
+    color: var(--pallete1);
+    font-style:normal;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.navbar .navbar-item a{
+    color: var(--pallete2);
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+.navbar .navbar-item a:hover{
+    color: var(--pallete2);
+    font-weight: bold;
+}
+
+.navbar-extra a{
+    color: var(--pallete1);
+    padding-right: 2.5rem;
+}
+
+.navbar-extra a:hover{
+    color: var(--pallete2);
+    font-weight: bold;
+}
+/* HOME */
+.utama{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    background-image: url(Photo/ramen-home.jpg);
+    /* width: auto; */
+    background-size:35rem;
+    background-position:right;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.konten{
+    margin-left: 3rem;
+}
+.konten h1 pre{
+    height: 15rem;
+    font-size: 80px;
+    color: var(--pallete1);
+}
+.konten p{
+    color:var(--pallete2);
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 200;
+    height: 30px;
+}
+.konten h6 pre{
+    color:var(--pallete2);
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    height: 9rem;
+    color: #ffffff
+}
+
+.butmenu{
+    color: var(--pallete2);
+    background-color: var(--pallete1);
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    height: 3.8rem;
+    width: 12.1rem;
+    text-align:center;
+}
+
+.about{
+    min-height: 110vh;
+    display:flex;
+    align-items:last baseline;
+    background-image: url(Photo/ramen\ kitchen.jpg);
+    width: auto;
+    background-size:cover;
+    background-position:center;
+    position: relative;
+} 
+.about h1{
+    margin-left: 3rem;
+    color: var(--pallete2);
+    font-size: 57px;
+    height: 10rem;
+}
+.about p{
+    margin-left: 3rem;
+    color:white;
+    font-size: 25px;
+    height: 6.5rem;
+    margin-right: 15rem;
+    font-weight: 450;
+}
+
+.chef{
+    max-height: 100vh;
+}
+.chef h1{
+    text-align: center;
+    color: var(--pallete1);
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+.chef p{
+    text-align: left;
+    color: var(--pallete2);
+    margin-left: 13rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    height: 8rem;
+    font-weight: 450;
+    font-size: 1.5rem;
+}
+
+img{
+    height: auto;
+    width: 100%;
+    background-color:var(--pallete2);
+   
+}
+.container{
+    width: 400px;
+    transform:translate(-50%, -105%) ;
+    top: -10%;
+    left: 50%;
+    overflow: hidden;
+    border: 5px solid #fcfcfc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 10px 25px 30px rgb(31, 28, 28);
+    margin-left: 70%;
+}
+
+.potchef{
+    width: auto;
+    display:flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+/* Menu */
+.menu{
+    background-image: url(photo/ambience\ ramen.jpg);
+    min-height: 110vh;
+    width: auto;
+    background-size:cover;
+    background-position:center;
+}
+.menu h1{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: rgba(221, 151, 20, 0.912);
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.menu p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;    
+}
+.menu .menu-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu .menu-box .menu-card{
+    width: 320px;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: black;
+}
+
+.menu .menu-box .menu-card .menu-img{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu-box .menu-card .menu-img img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;  
+    transition: 0,3s; 
+}
+.menu .menu-box .menu-card .menu-img img:hover{
+    transform:scale(1.1)
+}
+.menu-info{
+    text-align: center
+}
+.menu-info h3{
+    color: rgba(221, 151, 20, 0.912);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.menu-info h5, p{
+    color: white;
+}
+.menu-info p{
+    font-size: 14px;
+}
+.menu-info .price{
+    font-weight: bold;
+}
+
+.lokasi {
+    min-height: 90vh;
+    background-image: url(Photo/location_background\ rev.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 8rem 7% 1.4rem;
+}
+
+.lokasi h1 {
+    color: var(--pallete1);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.lokasi .row {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.lokasi .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+    opacity: 3;
+}
+
+::-ms-input-placeholder {
+    color: red;
+}
+
+.lokasi .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: left;
+    background-color: rgba(221, 151, 20, 1);
+}
+
+.lokasi .row form h1 {
+    color: white;
+}
+
+.lokasi .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding-left: 2rem;
+}
+
+.lokasi .row form .input-group input {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    background: none;
+    color: black;
+}
+
+.lokasi .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: var(--bg);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lokasi p {
+    margin: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.credit{
+    height: 55px;
+    display: flex;
+    width: auto;
+    background-color: var(--bg);
+    /* justify-content:flex-end; */
+    align-items:center;
+    /* position: fixed; */
+    /* top: 0; */
+    left: 0;
+    right: 0;
+}
+ 
+.credit p{
+    text-align: center;
+    margin-left: 36rem;
+    font-weight: 300;
+}
+
