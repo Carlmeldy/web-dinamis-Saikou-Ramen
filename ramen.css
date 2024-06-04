@@ -388,3 +388,159 @@ img{
     font-weight: 300;
 }
 
+/* order */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar-order{
+    font-size:1.4rem;
+    font-weight:bolder;
+    color: white;
+    font-style:normal;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-top: 28px;
+}
+
+.navbar-order a:hover{
+    color: var(--pallete1);
+    font-weight: bold;
+}
+
+.icon{
+    color: var(--pallete1);
+    justify-content: center;
+    display: flex;
+}
+.icon h1{
+    color: var(--pallete2);
+    
+}
+.icon h1{
+    color: var(--pallete1);
+}
+.icon h1 span{
+    color: var(--pallete2);
+    font-size: 3rem;
+}
+.icon .cs{
+    width: 80px;
+    height: 50px;
+}
+
+.daftar {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    color: var(--pallete1);
+    padding: 15px;
+    font-weight: bold;  
+}
+/* -------------------------------------------------------------- coba di bawah ini udah */
+.name, .table-number {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--pallete1);
+}
+
+.order-list ,.quantity, .price, .customize{
+    margin-bottom: 20px;
+    color: var(--pallete1);
+    padding: 15px;
+}
+
+.order-list {
+    margin-top: 30px;
+    margin-left: 11rem;
+    color: var(--pallete2);
+    font-size: larger;
+}
+.order-list h2{
+    margin-bottom: 1rem;
+}
+
+.list-list .item-name{
+    color: var(--pallete2);
+    font-weight: 700;
+}
+.list-list .custom{
+    color: var(--pallete1);
+    font-weight: 600;
+}
+.list-list li{
+    margin-left: 8rem;
+}
+
+.order-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* --------------------------------------------- blom cek  */
+
+/* ----------------------------------------------------------------------TEST BARU */
+.order-item {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    margin-right: 10rem;
+}
+
+#paitan-quantity,#tonkotsu-quantity,#soysauce-quantity{
+    width: 40px;
+}
+
+.order-item-quantity {
+    display: flex;
+    margin-right: 38rem;
+    height: 2rem;
+}
+.order-item-quantity button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* .order-item-quantity .price {
+    width: 100px;
+    text-align: right;
+    color: white;
+ } */
+  .total-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .confirm-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+
+

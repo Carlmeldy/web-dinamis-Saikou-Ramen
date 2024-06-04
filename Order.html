@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Order Page</title>
+    <link rel="stylesheet" href="ramen.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar-order">
+        <a id="Home" href="Home.Html" class="navbar-judul">Back</a>
+
+        <div class="icon">
+            <h1><i class="cs" data-feather="shopping-cart"></i><span>Order</span></h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="order-summary"></div>
+            <form method="post" class="daftar">
+                <label for="name" class="name">Name </label>
+                <input type="text" id="name">
+                <label for="number" class="table-number">Table Number </label>
+                <input type="number" id="number">
+            </form>
+        </div>
+    
+            <div class="order-list">
+                <h2>Your Order List</h2>
+                <ul class="list-list">
+                    <li>
+                        <p class="item-name">Chicken Paitan Ramen <br>
+                            <span class="custom">customize</span>
+                        </p>
+                        <div class="order-item-quantity">
+                            <button class="minus-btn">-</button>
+                            <input type="number" value="1" min="1" id="paitan-quantity">
+                            <button class="plus-btn">+</button>
+                            <span class="price">+ IDR 38.5</span>
+                          </div>
+                        
+                        
+                    </li>
+                    <li>
+                        <p class="item-name">Tonkotsu Ramen <br>
+                            <span class="custom">customize</span>
+                        </p>
+                        <div class="order-item-quantity">
+                            <button class="minus-btn">-</button>
+                            <input type="number" value="1" min="1" id="tonkotsu-quantity">
+                            <button class="plus-btn">+</button>
+                            <span class="price">+ IDR 38.5</span>
+                        </div>
+                        
+                       
+                    </li>
+                    <li>
+                        <p class="item-name">Soy Sauce Dumpling Ramen <br>
+                            <span class="custom">customize</span>
+                        </p>
+                        <div class="order-item-quantity">
+                            <button class="minus-btn">-</button>
+                            <input type="number" value="1" min="1" id="soysauce-quantity">
+                            <button class="plus-btn">+</button>
+                            <span class="price">+ IDR 40</span> 
+                          </div>
+                        
+                       
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="garis">
+     <div class="total-payment">
+        <span>Total Payment</span>
+        <span id="total-price">IDR 117</span>
+    </div>
+        <button class="confirm-button">CONFIRM ORDER</button>
+  </div>
+  
+        <script src="script.js"></script>
+    </section>
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>
