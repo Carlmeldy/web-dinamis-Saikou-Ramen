@@ -1,10 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const confirmOrderButton = document.querySelector(".confirm-order");
-//     confirmOrderButton.addEventListener("click", function() {
-//         // Add your logic here to handle the confirm order action
-//         alert("Order confirmed!");
-//     });
-// });
+
 
 
     const chickenPaitanQuantity = document.getElementById('chicken-paitan-quantity');
@@ -61,6 +55,13 @@
       });
     });
 
+    document.addEventListener("DOMContentLoaded", function() {
+      const confirmOrderButton = document.querySelector(".confirm-button");
+      confirmOrderButton.addEventListener("click", function() {
+          // Add your logic here to handle the confirm order action
+          alert("Order confirmed!");
+      });
+  });
  // Initial price calculation
  calculateTotalPrice();
 
